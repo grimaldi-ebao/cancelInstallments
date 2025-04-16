@@ -18,7 +18,7 @@ from tqdm import tqdm
 host = "https://br-gw.insuremo.com/hdibrazil/1.0"
 arap_query_api= host + "/bcp-bff-app/v1/bcpbff/queryArapPage"
 arap_update_api= host + "/bcp-bff-app/v1/bcpbff/updateArapList"
-token = "s-8-sERmR0Kxtj6dVjnQmw"
+token = "jE5RiDVZQQKO4bzEewcGGQ"
 headers = {'Content-Type': 'application/json', 'x-mo-tenant-code': 'hdibrazil', 'Authorization': 'Bearer ' + token}
 
 

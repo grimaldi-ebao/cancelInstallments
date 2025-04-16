@@ -3,6 +3,7 @@ from http.client import responses
 import requests
 import json
 # import os
+import logging
 from datetime import datetime, time
 
 from twisted.python.util import println
@@ -68,6 +69,17 @@ def query_arap(business_no, type):
 #         response = query_arap(item["cancelar"])
         # print(response.json())
 
+
+def logger():
+    #format = "%(asctime)s: %(message)s"
+    now = datetime.now()
+
+    logging.basicConfig(
+        filename='logfile{0}.log'.format(now.strftime("%Y%m%d_%H%M%S")),  # Name of the log file
+        level=logging.DEBUG,  # Set the minimum logging level
+        format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
+        #datefmt="%H:%M:%S"
+    )
 
 def start():
     logger()
