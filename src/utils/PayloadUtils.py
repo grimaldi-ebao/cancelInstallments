@@ -46,10 +46,35 @@ def arap_update_item(arap_id, arap_no):
     }
     return item
 
+def     arap_update_item_to_1(arap_id, arap_no):
+    item = {
+    "@type": "BcpArap-Arap",
+    "ArapId": arap_id,
+    "ArapNo": arap_no,
+    "ArapStatus": "7"
+    }
+    return item
+
 def update_arap_status():
     payload = {
 
     }
     return payload
+
+def arapno_query_payload(business_no):
+    query_payload = {
+        "Conditions": {
+            "ArapNo": business_no
+        },
+        "InConditions": {},
+        "FromRangeConditions": {},
+        "ToRangeConditions": {},
+        "PageNo": 1,
+        "PageSize": 500,
+        "SortField": "ArapId",
+        "SortType": "desc"
+    }
+
+    return query_payload
 
 
