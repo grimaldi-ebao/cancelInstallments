@@ -51,7 +51,7 @@ def     arap_update_item_to_1(arap_id, arap_no):
     "@type": "BcpArap-Arap",
     "ArapId": arap_id,
     "ArapNo": arap_no,
-    "ArapStatus": "7"
+    "ArapStatus": "1"
     }
     return item
 

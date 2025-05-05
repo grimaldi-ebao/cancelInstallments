@@ -14,7 +14,7 @@ from src.utils.RestUtils import post_request
 host = "https://br-gw.insuremo.com/hdibrazil/1.0"
 arap_query_api= host + "/bcp-bff-app/v1/bcpbff/queryArapPage"
 arap_update_api= host + "/bcp-bff-app/v1/bcpbff/updateArapList"
-token = "1T5Isj6wR_yKBE8DALIhFg"
+token = "rLSZO1IzRhWOoItjTiisQw"
 headers = {'Content-Type': 'application/json', 'x-mo-tenant-code': 'hdibrazil', 'Authorization': 'Bearer ' + token}
 
 
