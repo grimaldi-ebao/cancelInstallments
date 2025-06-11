@@ -7,7 +7,7 @@ def arap_endo_query_payload(business_no):
     query_payload = {
         "Conditions": {
             "EndoNo": business_no,
-            "ArapStatus": "1"
+            "ArapStatus": "7"
         },
         "InConditions": {},
         "FromRangeConditions": {},
@@ -24,7 +24,7 @@ def arap_policy_query_payload(business_no):
     query_payload = {
         "Conditions": {
             "PolicyNo": business_no,
-            "ArapStatus": "1"
+            "ArapStatus": "7"
         },
         "InConditions": {},
         "FromRangeConditions": {},
